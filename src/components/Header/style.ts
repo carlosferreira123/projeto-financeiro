@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import * as Dialog from '@radix-ui/react-dialog'
 
 export const HeaderContainer = styled.header`
  background: ${props => props.theme["gray-900"]};
@@ -14,10 +13,10 @@ padding: 0 1.5rem;
 
 display: flex;
 justify-content: space-between;
-align-items: center;            
+align-items: center;
 `;
 
-export const NewTrasctionButton = styled(Dialog.Trigger)`
+export const NewTrasctionButton = styled.button`
 height: 50px;
 border: 0;
 background: ${props => props.theme["green-500"]};
