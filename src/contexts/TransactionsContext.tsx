@@ -7,7 +7,7 @@ interface Transaction {
     type: 'income' | 'outcome';
     price: number;
     category: string;
-    createAt: string;
+    createdAt: string;
 
 }
 interface TransactionsProviderProps {
@@ -25,17 +25,22 @@ export function TransactionsProvider( {children}: TransactionsProviderProps) {
     
     const [transactions, setTransactions] = useState<Transaction[]>([])
         
+    useEffect(() => {
         async function loadTransactions() {
-            const response = await  fetch('http://localhost:3000/transactions') 
+          try {
+            const response = await fetch("http://localhost:3000/transactions");
+            if (!response.ok) {
+              throw new Error("Erro ao buscar transações");
+            }
             const data = await response.json();
-    
-            setTransactions(data);    
+            setTransactions(data);
+          } catch (error) {
+            console.error("Erro ao carregar transações:", error);
+          }
         }
-        
-        useEffect(() => {
-         loadTransactions()
-        
-        }, [])
+    
+        loadTransactions();
+      }, []);
     
     
     
