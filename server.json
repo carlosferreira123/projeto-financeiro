@@ -1,35 +1,44 @@
 {
-    "transactions": [
-        {
-            "id":1,
-            "description": "Desenvolvimento de site",
-            "type": "income",
-            "category": "Venda",
-            "price": 14000,
-            "createdAt": "Sat Jan 18 2025 20:06:13"
-        
-        },
-    
-
-   
-        {
-            "id":2,
-            "description": "Hamburgue",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 70,
-            "createdAt": "Sat Jan 18 2025 20:20:13"
-        
-        },
-
-        {
-            "id":3,
-            "description": "Plataforma",
-            "type": "outcome",
-            "category": "Educação",
-            "price": 1902,
-            "createdAt": "Sat Jan 18 2025 20:20:13"
-        
-        }
-    ]
+  "transactions": [
+    {
+      "id": "1",
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "Sat Jan 18 2025 20:06:13"
+    },
+    {
+      "id": "2",
+      "description": "Hamburgue",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 70,
+      "createdAt": "Sat Jan 18 2025 20:20:13"
+    },
+    {
+      "id": "3",
+      "description": "Plataforma",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 1902,
+      "createdAt": "Sat Jan 18 2025 20:20:13"
+    },
+    {
+      "id": "92d9",
+      "description": "Data",
+      "category": "Venda",
+      "price": 2500,
+      "type": "income",
+      "createdAt": "2025-03-01T18:39:34.343Z"
+    },
+    {
+      "id": "edbd",
+      "description": "Carro",
+      "category": "Compra",
+      "price": 50000,
+      "type": "outcome",
+      "createdAt": "2025-03-01T19:26:42.725Z"
+    }
+  ]
 }
